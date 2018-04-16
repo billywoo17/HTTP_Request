@@ -11,7 +11,7 @@ function getAndPrintHTMLChunks () {
     var chunk = "";
 
     response.on('data', function (data) {
-      chunk += data;
+      chunk += data + '\n';
     });
 
     response.on('end', function() {
